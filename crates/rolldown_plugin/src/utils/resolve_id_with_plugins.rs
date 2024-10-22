@@ -37,6 +37,7 @@ pub async fn resolve_id_check_external(
         is_external: true,
         package_json: None,
         side_effects: None,
+        is_external_without_side_effects: false,
       }));
     }
   }
@@ -101,6 +102,7 @@ pub async fn resolve_id_with_plugins(
         is_external: matches!(r.external, Some(true)),
         package_json: None,
         side_effects: r.side_effects,
+        is_external_without_side_effects: false,
       }));
     }
   }
@@ -125,6 +127,7 @@ pub async fn resolve_id_with_plugins(
       is_external: matches!(r.external, Some(true)),
       package_json: None,
       side_effects: r.side_effects,
+      is_external_without_side_effects: false,
     }));
   }
 
@@ -137,6 +140,7 @@ pub async fn resolve_id_with_plugins(
       is_external: true,
       package_json: None,
       side_effects: None,
+      is_external_without_side_effects: false,
     }));
   }
 
@@ -162,6 +166,7 @@ fn resolve_id(
         module_def_format: ModuleDefFormat::Unknown,
         package_json: None,
         side_effects: None,
+        is_external_without_side_effects: true,
       })),
       ResolveError::Ignored(p) => Ok(Ok(ResolvedId {
         //(hyf0) TODO: This `p` doesn't seem to contains `query` or `fragment` of the input. We need to make sure this is ok
@@ -171,6 +176,7 @@ fn resolve_id(
         module_def_format: ModuleDefFormat::Unknown,
         package_json: None,
         side_effects: None,
+        is_external_without_side_effects: false,
       })),
       _ => Ok(Err(err)),
     }
@@ -182,6 +188,7 @@ fn resolve_id(
       is_external: false,
       package_json: resolved.package_json,
       side_effects: None,
+      is_external_without_side_effects: false,
     }))
   }
 }

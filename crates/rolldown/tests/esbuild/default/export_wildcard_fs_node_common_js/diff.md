@@ -42,7 +42,6 @@ Object.keys(node_fs).forEach(function (k) {
     get: function () { return node_fs[k]; }
   });
 });
-require("node:fs");
 require("./external");
 
 //#region internal.js
@@ -56,7 +55,7 @@ exports.foo = foo
 ===================================================================
 --- esbuild	/out.js
 +++ rolldown	entry.js
-@@ -1,13 +1,22 @@
+@@ -1,13 +1,21 @@
 -var entry_exports = {};
 -__export(entry_exports, {
 -    foo: () => foo
@@ -86,7 +85,6 @@ exports.foo = foo
 +        }
 +    });
  });
-+require("node:fs");
 +require("./external");
 +var foo = 123;
 +exports.foo = foo;
