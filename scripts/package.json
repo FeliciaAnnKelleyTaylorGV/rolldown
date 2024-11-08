@@ -6,7 +6,18 @@
     "type-check": "tsc -b",
     "esbuild-snap-diff": "node --import @oxc-node/core/register ./snap-diff/index.ts"
   },
-  "dependencies": {
+  "devDependencies": {
+    "@oxc-node/core": "^0.0.15",
+    "@types/diff": "^6.0.0",
+    "@types/lodash-es": "^4.17.12",
+    "acorn": "^8.12.1",
+    "astring": "^1.9.0",
+    "diff": "^7.0.0",
+    "estree-toolkit": "^1.7.8",
+    "web-tree-sitter": "^0.24.0",
+    "remark-parse": "^11.0.0",
+    "tree-sitter": "^0.22.0",
+    "unified": "^11.0.5",
     "@parcel/watcher": "^2.4.1",
     "@pnpm/find-workspace-packages": "^6.0.9",
     "@rolldown/testing": "workspace:*",
@@ -22,19 +33,6 @@
     "follow-redirects": "^1.15.6",
     "fs-extra": "^11.2.0",
     "semver": "^7.6.2",
-    "zx": "^8.1.2",
-    "remark-parse": "^11.0.0",
-    "tree-sitter": "^0.22.0",
-    "unified": "^11.0.5"
-  },
-  "devDependencies": {
-    "@oxc-node/core": "^0.0.15",
-    "@types/diff": "^6.0.0",
-    "@types/lodash-es": "^4.17.12",
-    "acorn": "^8.12.1",
-    "astring": "^1.9.0",
-    "diff": "^7.0.0",
-    "estree-toolkit": "^1.7.8",
-    "web-tree-sitter": "^0.24.0"
+    "zx": "^8.1.2"
   }
 }

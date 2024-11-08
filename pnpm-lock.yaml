@@ -343,7 +343,10 @@ importers:
   packages/testing: {}
 
   scripts:
-    dependencies:
+    devDependencies:
+      '@oxc-node/core':
+        specifier: ^0.0.15
+        version: 0.0.15
       '@parcel/watcher':
         specifier: ^2.4.1
         version: 2.4.1
@@ -356,12 +359,24 @@ importers:
       '@types/debug':
         specifier: ^4.1.12
         version: 4.1.12
+      '@types/diff':
+        specifier: ^6.0.0
+        version: 6.0.0
       '@types/fs-extra':
         specifier: ^11.0.4
         version: 11.0.4
+      '@types/lodash-es':
+        specifier: ^4.17.12
+        version: 4.17.12
       '@types/semver':
         specifier: ^7.5.8
         version: 7.5.8
+      acorn:
+        specifier: ^8.12.1
+        version: 8.14.0
+      astring:
+        specifier: ^1.9.0
+        version: 1.9.0
       chalk:
         specifier: ^5.3.0
         version: 5.3.0
@@ -374,6 +389,12 @@ importers:
       dedent:
         specifier: ^1.5.3
         version: 1.5.3
+      diff:
+        specifier: ^7.0.0
+        version: 7.0.0
+      estree-toolkit:
+        specifier: ^1.7.8
+        version: 1.7.8
       execa:
         specifier: ^9.2.0
         version: 9.5.1
@@ -398,34 +419,12 @@ importers:
       unified:
         specifier: ^11.0.5
         version: 11.0.5
-      zx:
-        specifier: ^8.1.2
-        version: 8.2.0
-    devDependencies:
-      '@oxc-node/core':
-        specifier: ^0.0.15
-        version: 0.0.15
-      '@types/diff':
-        specifier: ^6.0.0
-        version: 6.0.0
-      '@types/lodash-es':
-        specifier: ^4.17.12
-        version: 4.17.12
-      acorn:
-        specifier: ^8.12.1
-        version: 8.14.0
-      astring:
-        specifier: ^1.9.0
-        version: 1.9.0
-      diff:
-        specifier: ^7.0.0
-        version: 7.0.0
-      estree-toolkit:
-        specifier: ^1.7.8
-        version: 1.7.8
       web-tree-sitter:
         specifier: ^0.24.0
         version: 0.24.3
+      zx:
+        specifier: ^8.1.2
+        version: 8.2.0
 
 packages:
 
