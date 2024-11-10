@@ -6,7 +6,412 @@ on:
       - main
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.sha }}
+  group: ${{ 2024-11-10T10:11:31.4100447Z Current runner version: '2.320.0'
+2024-11-10T10:11:31.4126542Z ##[group]Operating System
+2024-11-10T10:11:31.4127397Z Microsoft Windows Server 2022
+2024-11-10T10:11:31.4128047Z 10.0.20348
+2024-11-10T10:11:31.4128463Z Datacenter
+2024-11-10T10:11:31.4128940Z ##[endgroup]
+2024-11-10T10:11:31.4129479Z ##[group]Runner Image
+2024-11-10T10:11:31.4130009Z Image: windows-2022
+2024-11-10T10:11:31.4130553Z Version: 20241021.1.0
+2024-11-10T10:11:31.4131987Z Included Software: https://github.com/actions/runner-images/blob/win22/20241021.1/images/windows/Windows2022-Readme.md
+2024-11-10T10:11:31.4134063Z Image Release: https://github.com/actions/runner-images/releases/tag/win22%2F20241021.1
+2024-11-10T10:11:31.4135317Z ##[endgroup]
+2024-11-10T10:11:31.4135850Z ##[group]Runner Image Provisioner
+2024-11-10T10:11:31.4136513Z 2.0.384.1
+2024-11-10T10:11:31.4136992Z ##[endgroup]
+2024-11-10T10:11:31.4152777Z ##[group]GITHUB_TOKEN Permissions
+2024-11-10T10:11:31.4154481Z Actions: write
+2024-11-10T10:11:31.4154916Z Attestations: write
+2024-11-10T10:11:31.4155276Z Checks: write
+2024-11-10T10:11:31.4155621Z Contents: write
+2024-11-10T10:11:31.4155969Z Deployments: write
+2024-11-10T10:11:31.4156345Z Discussions: write
+2024-11-10T10:11:31.4156682Z Issues: write
+2024-11-10T10:11:31.4156988Z Metadata: read
+2024-11-10T10:11:31.4157315Z Packages: write
+2024-11-10T10:11:31.4157668Z Pages: write
+2024-11-10T10:11:31.4157960Z PullRequests: write
+2024-11-10T10:11:31.4158322Z RepositoryProjects: write
+2024-11-10T10:11:31.4158719Z SecurityEvents: write
+2024-11-10T10:11:31.4159045Z Statuses: write
+2024-11-10T10:11:31.4159367Z ##[endgroup]
+2024-11-10T10:11:31.4161295Z Secret source: Actions
+2024-11-10T10:11:31.4161826Z Prepare workflow directory
+2024-11-10T10:11:31.4864995Z Prepare all required actions
+2024-11-10T10:11:31.5023338Z Getting action download info
+2024-11-10T10:11:31.6813915Z Download action repository 'actions/checkout@v4' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+2024-11-10T10:11:32.4524621Z Complete job name: Warmup for release build with WASI target (windows-latest)
+2024-11-10T10:11:32.5658944Z ##[group]Run actions/checkout@v4
+2024-11-10T10:11:32.5659439Z with:
+2024-11-10T10:11:32.5659705Z   repository: rolldown/rolldown
+2024-11-10T10:11:32.5660247Z   token: ***
+2024-11-10T10:11:32.5660527Z   ssh-strict: true
+2024-11-10T10:11:32.5660799Z   ssh-user: git
+2024-11-10T10:11:32.5661078Z   persist-credentials: true
+2024-11-10T10:11:32.5661403Z   clean: true
+2024-11-10T10:11:32.5661682Z   sparse-checkout-cone-mode: true
+2024-11-10T10:11:32.5662041Z   fetch-depth: 1
+2024-11-10T10:11:32.5662298Z   fetch-tags: false
+2024-11-10T10:11:32.5662574Z   show-progress: true
+2024-11-10T10:11:32.5662843Z   lfs: false
+2024-11-10T10:11:32.5663079Z   submodules: false
+2024-11-10T10:11:32.5663360Z   set-safe-directory: true
+2024-11-10T10:11:32.5663663Z ##[endgroup]
+2024-11-10T10:11:32.9871156Z Syncing repository: rolldown/rolldown
+2024-11-10T10:11:32.9872848Z ##[group]Getting Git version info
+2024-11-10T10:11:32.9873527Z Working directory is 'D:\a\rolldown\rolldown'
+2024-11-10T10:11:33.1500087Z [command]"C:\Program Files\Git\bin\git.exe" version
+2024-11-10T10:11:33.2033294Z git version 2.47.0.windows.1
+2024-11-10T10:11:33.2159533Z ##[endgroup]
+2024-11-10T10:11:33.2180859Z Temporarily overriding HOME='D:\a\_temp\682a711a-78bd-4e9b-9e72-30ec87520772' before making global git config changes
+2024-11-10T10:11:33.2182172Z Adding repository directory to the temporary git global config as a safe directory
+2024-11-10T10:11:33.2191521Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\rolldown\rolldown
+2024-11-10T10:11:33.2731696Z Deleting the contents of 'D:\a\rolldown\rolldown'
+2024-11-10T10:11:33.2736844Z ##[group]Initializing the repository
+2024-11-10T10:11:33.2746022Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\rolldown\rolldown
+2024-11-10T10:11:33.3480377Z Initialized empty Git repository in D:/a/rolldown/rolldown/.git/
+2024-11-10T10:11:33.3532121Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/rolldown/rolldown
+2024-11-10T10:11:33.3940019Z ##[endgroup]
+2024-11-10T10:11:33.3940537Z ##[group]Disabling automatic garbage collection
+2024-11-10T10:11:33.3950019Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2024-11-10T10:11:33.4155285Z ##[endgroup]
+2024-11-10T10:11:33.4155714Z ##[group]Setting up auth
+2024-11-10T10:11:33.4167790Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2024-11-10T10:11:33.4391837Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2024-11-10T10:11:34.5974520Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-11-10T10:11:34.6188810Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2024-11-10T10:11:34.9997656Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2024-11-10T10:11:35.0221978Z ##[endgroup]
+2024-11-10T10:11:35.0222867Z ##[group]Fetching the repository
+2024-11-10T10:11:35.0236317Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +21ee99b5b172c6ef42d3ca3e458353e1a5a59d03:refs/remotes/origin/main
+2024-11-10T10:11:36.6169004Z From https://github.com/rolldown/rolldown
+2024-11-10T10:11:36.6170309Z  * [new ref]         21ee99b5b172c6ef42d3ca3e458353e1a5a59d03 -> origin/main
+2024-11-10T10:11:36.6380791Z ##[endgroup]
+2024-11-10T10:11:36.6381597Z ##[group]Determining the checkout info
+2024-11-10T10:11:36.6384519Z ##[endgroup]
+2024-11-10T10:11:36.6397234Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2024-11-10T10:11:36.6743156Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2024-11-10T10:11:36.6948465Z ##[group]Checking out the ref
+2024-11-10T10:11:36.6956819Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B main refs/remotes/origin/main
+2024-11-10T10:11:37.7401038Z Updating files:  82% (6292/7623)
+2024-11-10T10:11:37.7501854Z Updating files:  83% (6328/7623)
+2024-11-10T10:11:37.7617423Z Updating files:  84% (6404/7623)
+2024-11-10T10:11:37.7737814Z Updating files:  85% (6480/7623)
+2024-11-10T10:11:37.7845265Z Updating files:  86% (6556/7623)
+2024-11-10T10:11:37.7963867Z Updating files:  87% (6633/7623)
+2024-11-10T10:11:37.8093221Z Updating files:  88% (6709/7623)
+2024-11-10T10:11:37.8219865Z Updating files:  89% (6785/7623)
+2024-11-10T10:11:37.8366562Z Updating files:  90% (6861/7623)
+2024-11-10T10:11:37.8491049Z Updating files:  91% (6937/7623)
+2024-11-10T10:11:37.8670990Z Updating files:  92% (7014/7623)
+2024-11-10T10:11:37.8812359Z Updating files:  93% (7090/7623)
+2024-11-10T10:11:37.8910555Z Updating files:  94% (7166/7623)
+2024-11-10T10:11:37.9020583Z Updating files:  95% (7242/7623)
+2024-11-10T10:11:37.9132594Z Updating files:  96% (7319/7623)
+2024-11-10T10:11:37.9234357Z Updating files:  97% (7395/7623)
+2024-11-10T10:11:37.9355636Z Updating files:  98% (7471/7623)
+2024-11-10T10:11:37.9509832Z Updating files:  99% (7547/7623)
+2024-11-10T10:11:37.9510365Z Updating files: 100% (7623/7623)
+2024-11-10T10:11:37.9510901Z Updating files: 100% (7623/7623), done.
+2024-11-10T10:11:37.9760726Z branch 'main' set up to track 'origin/main'.
+2024-11-10T10:11:37.9765868Z Switched to a new branch 'main'
+2024-11-10T10:11:37.9798339Z ##[endgroup]
+2024-11-10T10:11:38.0091181Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2024-11-10T10:11:38.0283615Z 21ee99b5b172c6ef42d3ca3e458353e1a5a59d03
+2024-11-10T10:11:38.0784558Z Prepare all required actions
+2024-11-10T10:11:38.0784981Z Getting action download info
+2024-11-10T10:11:38.2302147Z Download action repository 'Boshen/setup-rust@main' (SHA:cd82e1efec7fef815e2c23d296756f31c7cdc03d)
+2024-11-10T10:11:38.6593270Z Getting action download info
+2024-11-10T10:11:38.8251341Z Download action repository 'Swatinem/rust-cache@v2' (SHA:82a92a6e8fbeee089604da2575dc567ae9ddeaab)
+2024-11-10T10:11:39.3454249Z Download action repository 'taiki-e/install-action@v2' (SHA:c6dc131d2c4291552cafb840290190a53b2cd937)
+2024-11-10T10:11:39.9358044Z ##[group]Run ./.github/actions/setup-rust
+2024-11-10T10:11:39.9358372Z with:
+2024-11-10T10:11:39.9358586Z   cache-key: release-build-wasi
+2024-11-10T10:11:39.9358874Z   save-cache: true
+2024-11-10T10:11:39.9359096Z   restore-cache: true
+2024-11-10T10:11:39.9359328Z ##[endgroup]
+2024-11-10T10:11:39.9662354Z ##[group]Run Boshen/setup-rust@main
+2024-11-10T10:11:39.9662653Z with:
+2024-11-10T10:11:39.9662879Z   restore-cache: true
+2024-11-10T10:11:39.9663117Z   save-cache: true
+2024-11-10T10:11:39.9663353Z   cache-key: release-build-wasi
+2024-11-10T10:11:39.9663629Z ##[endgroup]
+2024-11-10T10:11:39.9815698Z ##[group]Run echo 'components: '
+2024-11-10T10:11:39.9816064Z [36;1mecho 'components: '[0m
+2024-11-10T10:11:39.9816359Z [36;1mecho 'tools: '[0m
+2024-11-10T10:11:39.9816638Z [36;1mecho 'restore-cache: true'[0m
+2024-11-10T10:11:39.9816958Z [36;1mecho 'save-cache: true'[0m
+2024-11-10T10:11:39.9817289Z [36;1mecho 'cache-key: release-build-wasi'[0m
+2024-11-10T10:11:39.9831663Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2024-11-10T10:11:39.9832176Z ##[endgroup]
+2024-11-10T10:11:40.1232499Z components: 
+2024-11-10T10:11:40.1233286Z tools: 
+2024-11-10T10:11:40.1234070Z restore-cache: true
+2024-11-10T10:11:40.1234517Z save-cache: true
+2024-11-10T10:11:40.1234989Z cache-key: release-build-wasi
+2024-11-10T10:11:40.1366365Z ##[group]Run sed -i  -e 's/profile = "default"/profile = "minimal"/g' rust-toolchain.toml
+2024-11-10T10:11:40.1367115Z [36;1msed -i  -e 's/profile = "default"/profile = "minimal"/g' rust-toolchain.toml[0m
+2024-11-10T10:11:40.1367637Z [36;1mcat rust-toolchain.toml[0m
+2024-11-10T10:11:40.1378152Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2024-11-10T10:11:40.1378644Z ##[endgroup]
+2024-11-10T10:11:40.2147003Z [toolchain]
+2024-11-10T10:11:40.2147614Z channel = "1.82.0"
+2024-11-10T10:11:40.2153939Z profile = "minimal"
+2024-11-10T10:11:40.2275579Z ##[group]Run rustup set profile minimal
+2024-11-10T10:11:40.2275936Z [36;1mrustup set profile minimal[0m
+2024-11-10T10:11:40.2286508Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2024-11-10T10:11:40.2287003Z ##[endgroup]
+2024-11-10T10:11:41.6648014Z info: profile set to 'minimal'
+2024-11-10T10:11:41.6800481Z ##[group]Run rustup show
+2024-11-10T10:11:41.6800755Z [36;1mrustup show[0m
+2024-11-10T10:11:41.6801110Z [36;1mgit restore . # restore rust-toolchain.toml change[0m
+2024-11-10T10:11:41.6811405Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2024-11-10T10:11:41.6811911Z ##[endgroup]
+2024-11-10T10:11:41.7413671Z Default host: x86_64-pc-windows-msvc
+2024-11-10T10:11:41.7414197Z rustup home:  C:\Users\runneradmin\.rustup
+2024-11-10T10:11:41.7414529Z 
+2024-11-10T10:11:41.7565013Z info: syncing channel updates for '1.82.0-x86_64-pc-windows-msvc'
+2024-11-10T10:11:42.1014636Z info: latest update on 2024-10-17, rust version 1.82.0 (f6e511eec 2024-10-15)
+2024-11-10T10:11:42.1015572Z info: downloading component 'cargo'
+2024-11-10T10:11:42.2544588Z info: downloading component 'rust-std'
+2024-11-10T10:11:42.6709879Z info: downloading component 'rustc'
+2024-11-10T10:11:44.1659816Z info: installing component 'cargo'
+2024-11-10T10:11:44.7657124Z info: installing component 'rust-std'
+2024-11-10T10:11:46.1338071Z info: installing component 'rustc'
+2024-11-10T10:11:50.3651950Z 1.82.0-x86_64-pc-windows-msvc (overridden by 'D:\a\rolldown\rolldown\rust-toolchain.toml')
+2024-11-10T10:11:50.9251380Z rustc 1.82.0 (f6e511eec 2024-10-15)
+2024-11-10T10:11:51.7853309Z ##[group]Run Swatinem/rust-cache@v2
+2024-11-10T10:11:51.7853738Z with:
+2024-11-10T10:11:51.7853994Z   shared-key: release-build-wasi
+2024-11-10T10:11:51.7854280Z   save-if: true
+2024-11-10T10:11:51.7854496Z   prefix-key: v0-rust
+2024-11-10T10:11:51.7854736Z   cache-targets: true
+2024-11-10T10:11:51.7854973Z   cache-all-crates: false
+2024-11-10T10:11:51.7855230Z   cache-provider: github
+2024-11-10T10:11:51.7855475Z ##[endgroup]
+2024-11-10T10:11:54.7251623Z ##[group]Cache Configuration
+2024-11-10T10:11:54.7252263Z Cache Provider:
+2024-11-10T10:11:54.7252601Z     github
+2024-11-10T10:11:54.7252979Z Workspaces:
+2024-11-10T10:11:54.7253478Z     D:\a\rolldown\rolldown
+2024-11-10T10:11:54.7253958Z Cache Paths:
+2024-11-10T10:11:54.7254404Z     C:\Users\runneradmin\.cargo
+2024-11-10T10:11:54.7254929Z     D:\a\rolldown\rolldown\target
+2024-11-10T10:11:54.7255500Z Restore Key:
+2024-11-10T10:11:54.7256334Z     v0-rust-release-build-wasi-51d1a3b5
+2024-11-10T10:11:54.7256975Z Cache Key:
+2024-11-10T10:11:54.7257681Z     v0-rust-release-build-wasi-51d1a3b5-703c6b1d
+2024-11-10T10:11:54.7258287Z .. Prefix:
+2024-11-10T10:11:54.7258820Z   - v0-rust-release-build-wasi
+2024-11-10T10:11:54.7259342Z .. Environment considered:
+2024-11-10T10:11:54.7289465Z   - Rust Version: 1.82.0 x86_64-pc-windows-msvc (f6e511eec7342f59a25f7c0534f1dbea00d01b14)
+2024-11-10T10:11:54.7291229Z   - CARGO_INCREMENTAL
+2024-11-10T10:11:54.7291733Z .. Lockfiles considered:
+2024-11-10T10:11:54.7292624Z   - D:\a\rolldown\rolldown\.cargo\config.toml
+2024-11-10T10:11:54.7293296Z   - D:\a\rolldown\rolldown\Cargo.lock
+2024-11-10T10:11:54.7293782Z   - D:\a\rolldown\rolldown\crates\bench\Cargo.toml
+2024-11-10T10:11:54.7294327Z   - D:\a\rolldown\rolldown\crates\rolldown_binding\Cargo.toml
+2024-11-10T10:11:54.7294889Z   - D:\a\rolldown\rolldown\crates\rolldown_common\Cargo.toml
+2024-11-10T10:11:54.7295432Z   - D:\a\rolldown\rolldown\crates\rolldown_css\Cargo.toml
+2024-11-10T10:11:54.7296038Z   - D:\a\rolldown\rolldown\crates\rolldown_ecmascript_utils\Cargo.toml
+2024-11-10T10:11:54.7296664Z   - D:\a\rolldown\rolldown\crates\rolldown_ecmascript\Cargo.toml
+2024-11-10T10:11:54.7297220Z   - D:\a\rolldown\rolldown\crates\rolldown_error\Cargo.toml
+2024-11-10T10:11:54.7297735Z   - D:\a\rolldown\rolldown\crates\rolldown_fs\Cargo.toml
+2024-11-10T10:11:54.7298281Z   - D:\a\rolldown\rolldown\crates\rolldown_loader_utils\Cargo.toml
+2024-11-10T10:11:54.7298859Z   - D:\a\rolldown\rolldown\crates\rolldown_plugin_alias\Cargo.toml
+2024-11-10T10:11:54.7299521Z   - D:\a\rolldown\rolldown\crates\rolldown_plugin_build_import_analysis\Cargo.toml
+2024-11-10T10:11:54.7300202Z   - D:\a\rolldown\rolldown\crates\rolldown_plugin_data_url\Cargo.toml
+2024-11-10T10:11:54.7300890Z   - D:\a\rolldown\rolldown\crates\rolldown_plugin_dynamic_import_vars\Cargo.toml
+2024-11-10T10:11:54.7301575Z   - D:\a\rolldown\rolldown\crates\rolldown_plugin_import_glob\Cargo.toml
+2024-11-10T10:11:54.7302194Z   - D:\a\rolldown\rolldown\crates\rolldown_plugin_json\Cargo.toml
+2024-11-10T10:11:54.7302809Z   - D:\a\rolldown\rolldown\crates\rolldown_plugin_load_fallback\Cargo.toml
+2024-11-10T10:11:54.7303432Z   - D:\a\rolldown\rolldown\crates\rolldown_plugin_manifest\Cargo.toml
+2024-11-10T10:11:54.7304116Z   - D:\a\rolldown\rolldown\crates\rolldown_plugin_module_preload_polyfill\Cargo.toml
+2024-11-10T10:11:54.7304789Z   - D:\a\rolldown\rolldown\crates\rolldown_plugin_replace\Cargo.toml
+2024-11-10T10:11:54.7305398Z   - D:\a\rolldown\rolldown\crates\rolldown_plugin_transform\Cargo.toml
+2024-11-10T10:11:54.7306036Z   - D:\a\rolldown\rolldown\crates\rolldown_plugin_wasm_fallback\Cargo.toml
+2024-11-10T10:11:54.7306677Z   - D:\a\rolldown\rolldown\crates\rolldown_plugin_wasm_helper\Cargo.toml
+2024-11-10T10:11:54.7307251Z   - D:\a\rolldown\rolldown\crates\rolldown_plugin\Cargo.toml
+2024-11-10T10:11:54.7309265Z   - D:\a\rolldown\rolldown\crates\rolldown_resolver\Cargo.toml
+2024-11-10T10:11:54.7310020Z   - D:\a\rolldown\rolldown\crates\rolldown_rstr\Cargo.toml
+2024-11-10T10:11:54.7310581Z   - D:\a\rolldown\rolldown\crates\rolldown_sourcemap\Cargo.toml
+2024-11-10T10:11:54.7311142Z   - D:\a\rolldown\rolldown\crates\rolldown_std_utils\Cargo.toml
+2024-11-10T10:11:54.7311744Z   - D:\a\rolldown\rolldown\crates\rolldown_testing_config\Cargo.toml
+2024-11-10T10:11:54.7312318Z   - D:\a\rolldown\rolldown\crates\rolldown_testing\Cargo.toml
+2024-11-10T10:11:54.7312848Z   - D:\a\rolldown\rolldown\crates\rolldown_tracing\Cargo.toml
+2024-11-10T10:11:54.7313373Z   - D:\a\rolldown\rolldown\crates\rolldown_utils\Cargo.toml
+2024-11-10T10:11:54.7313873Z   - D:\a\rolldown\rolldown\crates\rolldown\Cargo.toml
+2024-11-10T10:11:54.7314358Z   - D:\a\rolldown\rolldown\crates\string_wizard\Cargo.toml
+2024-11-10T10:11:54.7314830Z   - D:\a\rolldown\rolldown\rust-toolchain.toml
+2024-11-10T10:11:54.7315403Z ##[endgroup]
+2024-11-10T10:11:54.7315536Z 
+2024-11-10T10:11:54.7315639Z ... Restoring cache ...
+2024-11-10T10:11:56.6998887Z Received 0 of 1351596754 (0.0%), 0.0 MBs/sec
+2024-11-10T10:11:57.7017597Z Received 104857600 of 1351596754 (7.8%), 49.9 MBs/sec
+2024-11-10T10:11:58.7053406Z Received 209715200 of 1351596754 (15.5%), 66.6 MBs/sec
+2024-11-10T10:11:59.7061006Z Received 318767104 of 1351596754 (23.6%), 75.8 MBs/sec
+2024-11-10T10:12:00.7069540Z Received 423624704 of 1351596754 (31.3%), 80.6 MBs/sec
+2024-11-10T10:12:01.7075810Z Received 528482304 of 1351596754 (39.1%), 83.8 MBs/sec
+2024-11-10T10:12:02.7185655Z Received 629145600 of 1351596754 (46.5%), 85.4 MBs/sec
+2024-11-10T10:12:03.7210023Z Received 729808896 of 1351596754 (54.0%), 86.7 MBs/sec
+2024-11-10T10:12:04.7219306Z Received 838860800 of 1351596754 (62.1%), 88.7 MBs/sec
+2024-11-10T10:12:05.7205699Z Received 935329792 of 1351596754 (69.2%), 89.0 MBs/sec
+2024-11-10T10:12:06.7218759Z Received 1044381696 of 1351596754 (77.3%), 90.3 MBs/sec
+2024-11-10T10:12:07.7209354Z Received 1145044992 of 1351596754 (84.7%), 90.8 MBs/sec
+2024-11-10T10:12:08.7262928Z Received 1241513984 of 1351596754 (91.9%), 90.9 MBs/sec
+2024-11-10T10:12:09.7286910Z Received 1343208146 of 1351596754 (99.4%), 91.3 MBs/sec
+2024-11-10T10:12:09.7703948Z Cache Size: ~1289 MB (1351596754 B)
+2024-11-10T10:12:09.7777363Z [command]"C:\Program Files\Git\usr\bin\tar.exe" -xf D:/a/_temp/d4339a06-2762-4456-aac6-ed3c931e02af/cache.tzst -P -C D:/a/rolldown/rolldown --force-local --use-compress-program "zstd -d"
+2024-11-10T10:12:10.7361383Z Received 1351596754 of 1351596754 (100.0%), 85.7 MBs/sec
+2024-11-10T10:12:25.8642493Z Cache restored successfully
+2024-11-10T10:12:25.9277682Z Restored from cache key "v0-rust-release-build-wasi-51d1a3b5-703c6b1d" full match: true.
+2024-11-10T10:12:25.9523267Z ##[group]Run rustup target add wasm32-wasip1-threads
+2024-11-10T10:12:25.9523798Z [36;1mrustup target add wasm32-wasip1-threads[0m
+2024-11-10T10:12:25.9562278Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2024-11-10T10:12:25.9562749Z env:
+2024-11-10T10:12:25.9562984Z   CACHE_ON_FAILURE: false
+2024-11-10T10:12:25.9563260Z   CARGO_INCREMENTAL: 0
+2024-11-10T10:12:25.9563517Z ##[endgroup]
+2024-11-10T10:12:28.5375715Z info: downloading component 'rust-std' for 'wasm32-wasip1-threads'
+2024-11-10T10:12:29.5776350Z info: installing component 'rust-std' for 'wasm32-wasip1-threads'
+2024-11-10T10:12:32.3634834Z ##[group]Run cargo check --release --workspace
+2024-11-10T10:12:32.3635337Z [36;1mcargo check --release --workspace[0m
+2024-11-10T10:12:32.3666078Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2024-11-10T10:12:32.3666517Z env:
+2024-11-10T10:12:32.3666737Z   CACHE_ON_FAILURE: false
+2024-11-10T10:12:32.3667030Z   CARGO_INCREMENTAL: 0
+2024-11-10T10:12:32.3667292Z ##[endgroup]
+2024-11-10T10:12:32.8629355Z     Updating crates.io index
+2024-11-10T10:12:54.5806483Z     Checking rolldown_std_utils v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_std_utils)
+2024-11-10T10:12:54.5813895Z     Checking rolldown_error v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_error)
+2024-11-10T10:12:54.5821863Z     Checking rolldown_fs v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_fs)
+2024-11-10T10:12:54.5823571Z     Checking rolldown_rstr v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_rstr)
+2024-11-10T10:12:54.6765923Z     Checking rolldown_utils v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_utils)
+2024-11-10T10:12:54.6839890Z     Checking string_wizard v0.0.22 (D:\a\rolldown\rolldown\crates\string_wizard)
+2024-11-10T10:12:54.9691465Z     Checking rolldown_ecmascript v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_ecmascript)
+2024-11-10T10:12:55.1725577Z     Checking rolldown_sourcemap v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_sourcemap)
+2024-11-10T10:12:55.3674423Z     Checking rolldown_common v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_common)
+2024-11-10T10:12:56.5269047Z     Checking rolldown_tracing v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_tracing)
+2024-11-10T10:12:56.7374741Z    Compiling rolldown_binding v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_binding)
+2024-11-10T10:12:56.9210250Z     Checking rolldown_css v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_css)
+2024-11-10T10:12:57.2562495Z     Checking rolldown_resolver v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_resolver)
+2024-11-10T10:12:57.2564099Z     Checking rolldown_ecmascript_utils v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_ecmascript_utils)
+2024-11-10T10:12:57.4623939Z     Checking rolldown_plugin v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin)
+2024-11-10T10:12:57.6072866Z     Checking rolldown_loader_utils v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_loader_utils)
+2024-11-10T10:12:57.7780990Z     Checking rolldown_testing_config v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_testing_config)
+2024-11-10T10:12:58.6103371Z     Checking rolldown_plugin_data_url v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_data_url)
+2024-11-10T10:12:58.8377606Z     Checking rolldown v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown)
+2024-11-10T10:12:58.8548308Z     Checking rolldown_plugin_wasm_helper v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_wasm_helper)
+2024-11-10T10:12:59.0492491Z     Checking rolldown_plugin_replace v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_replace)
+2024-11-10T10:12:59.3400332Z     Checking rolldown_plugin_dynamic_import_vars v0.0.1 (D:\a\rolldown\rolldown\crates\rolldown_plugin_dynamic_import_vars)
+2024-11-10T10:12:59.6400850Z     Checking rolldown_plugin_alias v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_alias)
+2024-11-10T10:12:59.8414825Z     Checking rolldown_plugin_load_fallback v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_load_fallback)
+2024-11-10T10:13:00.0105795Z     Checking rolldown_plugin_manifest v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_manifest)
+2024-11-10T10:13:00.2612288Z     Checking rolldown_plugin_json v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_json)
+2024-11-10T10:13:00.3301908Z    Compiling rolldown_testing v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_testing)
+2024-11-10T10:13:00.4729093Z     Checking rolldown_plugin_transform v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_transform)
+2024-11-10T10:13:00.7040384Z     Checking rolldown_plugin_module_preload_polyfill v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_module_preload_polyfill)
+2024-11-10T10:13:00.8882791Z     Checking rolldown_plugin_import_glob v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_import_glob)
+2024-11-10T10:13:01.1242023Z     Checking rolldown_plugin_wasm_fallback v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_wasm_fallback)
+2024-11-10T10:13:01.2834429Z     Checking rolldown_plugin_build_import_analysis v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_build_import_analysis)
+2024-11-10T10:13:04.2135049Z     Checking bench v0.1.0 (D:\a\rolldown\rolldown\crates\bench)
+2024-11-10T10:13:08.2612479Z     Finished `release` profile [optimized] target(s) in 35.60s
+2024-11-10T10:13:08.4121046Z ##[group]Run cargo test --release --workspace --no-run
+2024-11-10T10:13:08.4121834Z [36;1mcargo test --release --workspace --no-run[0m
+2024-11-10T10:13:08.4152597Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2024-11-10T10:13:08.4153081Z env:
+2024-11-10T10:13:08.4153360Z   CACHE_ON_FAILURE: false
+2024-11-10T10:13:08.4153695Z   CARGO_INCREMENTAL: 0
+2024-11-10T10:13:08.4154008Z ##[endgroup]
+2024-11-10T10:13:09.2600407Z    Compiling rolldown_std_utils v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_std_utils)
+2024-11-10T10:13:09.2604300Z    Compiling string_wizard v0.0.22 (D:\a\rolldown\rolldown\crates\string_wizard)
+2024-11-10T10:13:09.2623225Z    Compiling rolldown_error v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_error)
+2024-11-10T10:13:09.2631630Z    Compiling rolldown_fs v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_fs)
+2024-11-10T10:13:09.4534426Z    Compiling rolldown_utils v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_utils)
+2024-11-10T10:13:09.8334873Z    Compiling rolldown_ecmascript v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_ecmascript)
+2024-11-10T10:13:10.9764533Z    Compiling rolldown_sourcemap v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_sourcemap)
+2024-11-10T10:13:11.5666567Z    Compiling rolldown_rstr v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_rstr)
+2024-11-10T10:13:11.8046094Z    Compiling rolldown_common v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_common)
+2024-11-10T10:13:12.5199545Z    Compiling rolldown_tracing v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_tracing)
+2024-11-10T10:13:14.3131705Z    Compiling rolldown_resolver v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_resolver)
+2024-11-10T10:13:14.6992815Z    Compiling rolldown_plugin v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin)
+2024-11-10T10:13:16.4165355Z    Compiling rolldown_ecmascript_utils v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_ecmascript_utils)
+2024-11-10T10:13:17.5612197Z    Compiling rolldown_plugin_data_url v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_data_url)
+2024-11-10T10:13:18.2480656Z    Compiling rolldown_loader_utils v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_loader_utils)
+2024-11-10T10:13:19.6145697Z    Compiling rolldown v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown)
+2024-11-10T10:13:21.2322110Z    Compiling rolldown_testing_config v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_testing_config)
+2024-11-10T10:13:23.5151712Z    Compiling rolldown_testing v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_testing)
+2024-11-10T10:13:24.5673271Z    Compiling rolldown_plugin_replace v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_replace)
+2024-11-10T10:13:28.7597649Z    Compiling rolldown_plugin_manifest v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_manifest)
+2024-11-10T10:13:29.5260489Z    Compiling rolldown_plugin_import_glob v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_import_glob)
+2024-11-10T10:13:31.9892829Z    Compiling rolldown_plugin_wasm_helper v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_wasm_helper)
+2024-11-10T10:13:32.2259611Z    Compiling rolldown_plugin_build_import_analysis v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_build_import_analysis)
+2024-11-10T10:13:34.5259287Z    Compiling rolldown_plugin_json v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_json)
+2024-11-10T10:13:34.9176176Z    Compiling rolldown_plugin_transform v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_transform)
+2024-11-10T10:13:35.4859597Z    Compiling rolldown_plugin_load_fallback v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_load_fallback)
+2024-11-10T10:13:35.7727990Z    Compiling rolldown_plugin_alias v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_alias)
+2024-11-10T10:13:36.0453162Z    Compiling rolldown_plugin_module_preload_polyfill v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_module_preload_polyfill)
+2024-11-10T10:13:36.2778652Z    Compiling rolldown_plugin_wasm_fallback v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_plugin_wasm_fallback)
+2024-11-10T10:13:36.4901171Z    Compiling rolldown_plugin_dynamic_import_vars v0.0.1 (D:\a\rolldown\rolldown\crates\rolldown_plugin_dynamic_import_vars)
+2024-11-10T10:18:43.6211067Z    Compiling rolldown_binding v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_binding)
+2024-11-10T10:23:05.8812814Z    Compiling rolldown_css v0.1.0 (D:\a\rolldown\rolldown\crates\rolldown_css)
+2024-11-10T10:24:31.1683361Z     Finished `release` profile [optimized] target(s) in 11m 22s
+2024-11-10T10:24:31.2520129Z   Executable unittests src\lib.rs (target\release\deps\rolldown-81ff01b273923bcb.exe)
+2024-11-10T10:24:31.2521642Z   Executable tests\integration_esbuild.rs (target\release\deps\integration_esbuild-db46f7b4782603dc.exe)
+2024-11-10T10:24:31.2523374Z   Executable tests\integration_practical.rs (target\release\deps\integration_practical-4c061f5af1a4717e.exe)
+2024-11-10T10:24:31.2524734Z   Executable tests\integration_rolldown.rs (target\release\deps\integration_rolldown-4943485a68065c52.exe)
+2024-11-10T10:24:31.2526426Z   Executable tests\integration_rollup.rs (target\release\deps\integration_rollup-9db39a2be295463b.exe)
+2024-11-10T10:24:31.2527755Z   Executable unittests src\lib.rs (target\release\deps\rolldown_binding-030d2b1379f7f38e.exe)
+2024-11-10T10:24:31.2529272Z   Executable unittests src\lib.rs (target\release\deps\rolldown_common-a1d0ea9de585c4d7.exe)
+2024-11-10T10:24:31.2530293Z   Executable unittests src\lib.rs (target\release\deps\rolldown_css-e74b48072dd445b7.exe)
+2024-11-10T10:24:31.2531236Z   Executable unittests src\lib.rs (target\release\deps\rolldown_ecmascript-29067df45124d161.exe)
+2024-11-10T10:24:31.2532632Z   Executable unittests src\lib.rs (target\release\deps\rolldown_ecmascript_utils-52c8706070677edc.exe)
+2024-11-10T10:24:31.2533955Z   Executable unittests src\lib.rs (target\release\deps\rolldown_error-f45b3258d34e6d52.exe)
+2024-11-10T10:24:31.2534917Z   Executable unittests src\lib.rs (target\release\deps\rolldown_fs-9b85fe586cbd8a76.exe)
+2024-11-10T10:24:31.2536596Z   Executable unittests src\lib.rs (target\release\deps\rolldown_loader_utils-0b64159f7ef5789b.exe)
+2024-11-10T10:24:31.2538128Z   Executable unittests src\lib.rs (target\release\deps\rolldown_plugin-550b78f89da9c191.exe)
+2024-11-10T10:24:31.2539495Z   Executable unittests src\lib.rs (target\release\deps\rolldown_plugin_alias-811d6d4613c02887.exe)
+2024-11-10T10:24:31.2540606Z   Executable unittests src\lib.rs (target\release\deps\rolldown_plugin_build_import_analysis-ad1aabb8e0fe0fb7.exe)
+2024-11-10T10:24:31.2541766Z   Executable unittests src\lib.rs (target\release\deps\rolldown_plugin_data_url-a945fdec3517b864.exe)
+2024-11-10T10:24:31.2543354Z   Executable unittests src\lib.rs (target\release\deps\rolldown_plugin_dynamic_import_vars-902ab8b2db45285f.exe)
+2024-11-10T10:24:31.2544461Z   Executable unittests src\lib.rs (target\release\deps\rolldown_plugin_import_glob-2c253ac444b289e1.exe)
+2024-11-10T10:24:31.2545899Z   Executable unittests src\lib.rs (target\release\deps\rolldown_plugin_json-51f3949daee6dd57.exe)
+2024-11-10T10:24:31.2547377Z   Executable unittests src\lib.rs (target\release\deps\rolldown_plugin_load_fallback-f2ede61044d6e509.exe)
+2024-11-10T10:24:31.2548469Z   Executable unittests src\lib.rs (target\release\deps\rolldown_plugin_manifest-812dec555537f616.exe)
+2024-11-10T10:24:31.2550027Z   Executable unittests src\lib.rs (target\release\deps\rolldown_plugin_module_preload_polyfill-3683b49060de99cc.exe)
+2024-11-10T10:24:31.2551093Z   Executable unittests src\lib.rs (target\release\deps\rolldown_plugin_replace-1bb35a2c766093b9.exe)
+2024-11-10T10:24:31.2552409Z   Executable tests\fixtures.rs (target\release\deps\fixtures-3ae4d7c00b1900c0.exe)
+2024-11-10T10:24:31.2553808Z   Executable unittests src\lib.rs (target\release\deps\rolldown_plugin_transform-ff89e5ea88203b99.exe)
+2024-11-10T10:24:31.2554942Z   Executable unittests src\lib.rs (target\release\deps\rolldown_plugin_wasm_fallback-5a09bad8f252a2e7.exe)
+2024-11-10T10:24:31.2557709Z   Executable unittests src\lib.rs (target\release\deps\rolldown_plugin_wasm_helper-3e5074620582abd1.exe)
+2024-11-10T10:24:31.2559079Z   Executable unittests src\lib.rs (target\release\deps\rolldown_resolver-f85b9a86d6cacfd0.exe)
+2024-11-10T10:24:31.2560470Z   Executable unittests src\lib.rs (target\release\deps\rolldown_rstr-f797caab5ebdddc7.exe)
+2024-11-10T10:24:31.2561781Z   Executable unittests src\lib.rs (target\release\deps\rolldown_std_utils-c9e4956eba5b95cd.exe)
+2024-11-10T10:24:31.2563118Z   Executable unittests src\lib.rs (target\release\deps\rolldown_utils-52c7308fe0f11ec6.exe)
+2024-11-10T10:24:31.2564023Z   Executable unittests src\lib.rs (target\release\deps\string_wizard-44ac6ddd737d64ac.exe)
+2024-11-10T10:24:31.2565457Z   Executable tests\joiner.rs (target\release\deps\joiner-1d4f5b097b7db7f7.exe)
+2024-11-10T10:24:31.2566789Z   Executable tests\magic_string.rs (target\release\deps\magic_string-9daa9e0da054e176.exe)
+2024-11-10T10:24:31.2568223Z   Executable tests\magic_string_source_map.rs (target\release\deps\magic_string_source_map-f76af97869e50167.exe)
+2024-11-10T10:24:31.3734076Z Post job cleanup.
+2024-11-10T10:24:31.3865027Z Post job cleanup.
+2024-11-10T10:24:31.3991000Z Post job cleanup.
+2024-11-10T10:24:31.5697273Z Cache up-to-date.
+2024-11-10T10:24:31.5943349Z Post job cleanup.
+2024-11-10T10:24:31.8018045Z [command]"C:\Program Files\Git\bin\git.exe" version
+2024-11-10T10:24:31.8239340Z git version 2.47.0.windows.1
+2024-11-10T10:24:31.8305211Z Temporarily overriding HOME='D:\a\_temp\ac412102-4c7d-44d2-bf30-3dc2e15fccdb' before making global git config changes
+2024-11-10T10:24:31.8306221Z Adding repository directory to the temporary git global config as a safe directory
+2024-11-10T10:24:31.8316211Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\rolldown\rolldown
+2024-11-10T10:24:31.8540998Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2024-11-10T10:24:31.8758665Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2024-11-10T10:24:32.2714714Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-11-10T10:24:32.2907349Z http.https://github.com/.extraheader
+2024-11-10T10:24:32.2943118Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+2024-11-10T10:24:32.3167512Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2024-11-10T10:24:32.7342485Z Cleaning up orphan processes
+2024-11-10T10:24:32.7677231Z Terminate orphan process: pid (2732) (ctip) }}-${{ github.event.pull_request.number || github.sha }}
   cancel-in-progress: ${{ github.ref_name != 'main' }}
 
 jobs:
